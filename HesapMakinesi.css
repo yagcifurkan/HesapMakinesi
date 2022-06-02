@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #112b3c;
+}
+
+.hesapmakinesi {
+  position: absolute;
+  padding: 50px 30px;
+  border-radius: 10px;
+  background-color: #efefef;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ekran {
+  width: 100%;
+  
+}
+
+.ekran input {
+  width: 100%;
+  padding: 15px 10px;
+  border: none;
+  font-size: 35px;
+  color: #efefef;
+  text-align: right;
+  border-radius: 10px;
+  background-color: #205375;
+  
+}
+
+.ekran input::placeholder {
+  color: #afafaf;
+}
+
+.butonlar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin-top: 40px;
+}
+
+.butonlar button[type="button"] {
+  font-size: 20px;
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+  color: #205375;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.butonlar button[type="button"]:hover {
+  transition: all 0.2s ease;
+  color: #efefef;
+  background-color: #f66b0e;
+}
+
+button[type="button"][value="C"] {
+  color: #f66b0e;
+}
+
+button[type="button"][value="fonksiyon1"] {
+  grid-column: span 2;
+}
+
+button[type="button"][value="fonksiyon2"] {
+  grid-column: span 2;
+}
+
+button[type="button"][value="0"] {
+  grid-column: span 2;
+}
+
+button[type="button"][value="="] {
+  grid-row: span 2;
+  color: #efefef;
+  background-color: #f66b0e;
+}
+
+button[type="button"][value="="]:hover {
+  color: #efefef;
+  background-color: #205375;
+}
