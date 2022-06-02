@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hesap Makinesi</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="HesapMakinesi.css" />
+  </head>
+  <body>
+    <form class="hesapmakinesi" name="hesapmakinesi">
+      <div class="ekran">
+        <input type="text" placeholder="0" name="sonuc" disabled />
+      </div>
+      <div class="butonlar">
+        <button type="button" value="fonksiyon1" onclick="fonksiyon1()">Fonksiyon 1</button>
+        <button type="button" value="fonksiyon2" onclick="fonksiyon2()">Fonksiyon 2</button>
+        <button type="button" value="log10" onclick="log10()">Log(x)</button>
+        <button type="button" value="kok" onclick="kok()">Kök(x)</button>
+        <button type="button" value="sin" onclick="sin()">Sin(x)</button>
+        <button type="button" value="cos" onclick="cos()">Cos(x)</button>
+        <button type="button" value="10^x" onclick="x10()">10^x</button>
+        <button type="button" value="2^x" onclick="x2()">2^x</button>
+        <button type="button" value="|x|" onclick="mutlakdeger()">|x|</button>
+        <button type="button" value="%" onclick="yuzde()">%</button>
+        <button type="button" value="C" onclick="sifirla()">C</button>
+        <button type="button" value="Sil" onclick="sil()">SİL</button>
+        <button type="button" value="/" onclick="sayi(value)">÷</button>
+        <button type="button" value="*" onclick="sayi(value)">x</button>
+        <button type="button" value="7" onclick="sayi(value)">7</button>
+        <button type="button" value="8" onclick="sayi(value)">8</button>
+        <button type="button" value="9" onclick="sayi(value)">9</button>
+        <button type="button" value="-" onclick="sayi(value)">-</button>
+        <button type="button" value="4" onclick="sayi(value)">4</button>
+        <button type="button" value="5" onclick="sayi(value)">5</button>
+        <button type="button" value="6" onclick="sayi(value)">6</button>
+        <button type="button" value="+" onclick="sayi(value)">+</button>
+        <button type="button" value="1" onclick="sayi(value)">1</button>
+        <button type="button" value="2" onclick="sayi(value)">2</button>
+        <button type="button" value="3" onclick="sayi(value)">3</button>
+        <button type="button" value="=" onclick="esittir()">=</button>
+        <button type="button" value="0" onclick="sayi(value)">0</button>
+        <button type="button" value="." onclick="sayi(value)">.</button>
+      </div>
+    </form>
+    <script src="HesapMakinesi.js"></script>
+  </body>
+</html>
